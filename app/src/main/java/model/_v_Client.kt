@@ -1,0 +1,30 @@
+package model
+
+data class _v_Client(
+    val _v_id: Int,
+    var _v_nomPrenoms: String,
+    var _v_telephone: String,
+    var _v_epaule: String?,
+    var _v_poitrine: String?,
+    var _v_longueurTaille: String?,
+    var _v_tourVentrale: String?,
+    var _v_hanche: String?,
+    var _v_longueurCorsage: String?,
+    var _v_ceinture: String?,
+    var _v_longueurJupe: String?,
+    var _v_longueurRobe: String?,
+    var _v_longueurManche: String?,
+    var _v_tailleManche: String?,
+    var _v_longueurPantalon: String?,
+    var _v_longueurRobeCourte: String?,
+    var _v_tourCuisses: String?,
+    var _v_longueurGenoux: String?,
+    var _v_tourGenoux: String?,
+    var _v_bas: String?,
+    var _v_autresMesures: String?,
+    var _v_dateCommande: String,
+    var _v_dateLivraison: String,
+    var _v_sommeTotale: Double,
+    var _v_avance: Double,
+    var _v_reste: Double
+)
