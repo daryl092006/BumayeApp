@@ -15,6 +15,7 @@ class _v_ClientAdapter(
     inner class _v_ClientViewHolder(itemView: View) :
         RecyclerView.ViewHolder(itemView) {
 
+        val _v_nomTv: TextView = itemView.findViewById(R.id._v_nomTv)
         val _v_mT: TextView = itemView.findViewById(R.id._v_mT)
         val _v_avance: TextView = itemView.findViewById(R.id._v_avance)
         val _v_reste: TextView = itemView.findViewById(R.id._v_reste)
@@ -33,7 +34,7 @@ class _v_ClientAdapter(
         position: Int
     ) {
         val _v_client = _v_clients[position]
-
+        holder._v_nomTv.text = _v_client._v_nomPrenoms // ou _v_client._v_nomComplet selon ton modèle
         holder._v_mT.text = "Total : ${_v_client._v_sommeTotale}"
         holder._v_avance.text = "Avance : ${_v_client._v_avance}"
         holder._v_reste.text = "Reste : ${_v_client._v_reste}"

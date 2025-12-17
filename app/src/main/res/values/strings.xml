@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Bumaye App</string>
+    <string name="num_ro_de_t_l_phone">Numéro de téléphone</string>
+    <string name="nom_et_pr_nom">Nom et Prénom</string>
+    <string name="informations_personelles">Informations personelles</string>
+    <string name="enregistrer">Enregistrer</string>
+    <string name="ajout_d_un_nouveau_client">Ajout d\'un nouveau client</string>
 </resources>

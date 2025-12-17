@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="._v_AddClientActivity"
+    android:gravity="center"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ajout_d_un_nouveau_client"
+        android:textSize="25sp"
+        android:layout_marginBottom="40dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/informations_personelles"
+        android:textSize="20sp"
+        android:layout_gravity="left"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/nom_et_pr_nom"
+        android:id="@+id/_v_nomEtPrenomEdt"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/num_ro_de_t_l_phone"
+        android:inputType="phone"
+        android:id="@+id/_v_phoneEdt"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="@string/enregistrer"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/_v_btnEnregistrer"/>
+</LinearLayout>
