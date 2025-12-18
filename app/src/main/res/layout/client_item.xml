@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        card_view:cardCornerRadius="12dp"
+        card_view:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <!-- Photo -->
+            <ImageView
+                android:id="@+id/photoIv"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_user"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bg_circle" />
+
+            <!-- Nom -->
+            <TextView
+                android:id="@+id/nomTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/photoIv"
+                android:layout_marginStart="12dp"
+                android:text="Nom et Prénom"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/photoCmd"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/shopping_cart"
+                android:scaleType="centerCrop"
+                android:layout_toEndOf="@id/photoIv"
+                android:layout_below="@id/nomTv"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/dateCmdTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nomTv"
+                android:layout_toEndOf="@id/photoCmd"
+                android:layout_marginTop="4dp"
+                android:text="12/12/2025"
+                android:textSize="13sp"
+                android:textColor="#666666" />
+
+            <!-- Date livraison -->
+            <TextView
+                android:id="@+id/dateLivTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/dateCmdTv"
+                android:text="Livraison : 20/12/2025"
+                android:textSize="13sp"
+                android:textColor="#666666" />
+
+            <!-- Séparateur -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/photoIv"
+                android:layout_marginTop="10dp"
+                android:background="#DDDDDD" />
+
+            <!-- Total -->
+            <TextView
+                android:id="@+id/totalTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/photoIv"
+                android:layout_marginTop="18dp"
+                android:text="Total : 50 000 FCFA"
+                android:textStyle="bold" />
+
+            <!-- Avance -->
+            <TextView
+                android:id="@+id/avanceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/totalTv"
+                android:text="Avance : 20 000"
+                android:textColor="#2E7D32" />
+
+            <!-- Reste -->
+            <TextView
+                android:id="@+id/resteTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/totalTv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+                android:text="Reste : 30 000"
+                android:textColor="#C62828"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BumayeApp">
         <activity
-            android:name="._v_AddClientActivity"
+            android:name=".AddClientActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

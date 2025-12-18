@@ -1,43 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="._v_AddClientActivity"
-    android:gravity="center"
-    android:padding="30dp">
+    android:padding="20dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/ajout_d_un_nouveau_client"
-        android:textSize="25sp"
-        android:layout_marginBottom="40dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/informations_personelles"
-        android:textSize="20sp"
-        android:layout_gravity="left"/>
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:hint="@string/nom_et_pr_nom"
-        android:id="@+id/_v_nomEtPrenomEdt"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:hint="@string/num_ro_de_t_l_phone"
-        android:inputType="phone"
-        android:id="@+id/_v_phoneEdt"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:text="@string/enregistrer"
-        android:textSize="20dp"
-        android:layout_marginTop="20dp"
-        android:id="@+id/_v_btnEnregistrer"/>
-</LinearLayout>
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajout d'un nouveau client"
+            android:textSize="25sp"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informations personnelles"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Nom et prénoms"
+            android:id="@+id/nomEtPrenomEdt"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Numéro de téléphone"
+            android:inputType="phone"
+            android:id="@+id/phoneEdt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mesures à enregistrer"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+        <EditText android:id="@+id/epauleEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Épaule"/>
+        <EditText android:id="@+id/poitrineEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Poitrine"/>
+        <EditText android:id="@+id/longueurTailleEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Longueur taille"/>
+        <EditText android:id="@+id/tourVentraleEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Tour ventrale"/>
+        <EditText android:id="@+id/hancheEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Hanche"/>
+        <EditText android:id="@+id/longueurCorsageEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Longueur corsage"/>
+        <EditText android:id="@+id/ceintureEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Ceinture"/>
+        <EditText android:id="@+id/longueurJupeEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Longueur jupe"/>
+        <EditText android:id="@+id/longueurRobeEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Longueur robe"/>
+        <EditText android:id="@+id/longueurMancheEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Longueur manche"/>
+        <EditText android:id="@+id/tailleMancheEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Taille de manche"/>
+        <EditText android:id="@+id/longueurPantalonEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Longueur pantalon"/>
+        <EditText android:id="@+id/longueurRobeCourteEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Longueur robe courte"/>
+        <EditText android:id="@+id/tourCuissesEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Tour de cuisse"/>
+        <EditText android:id="@+id/longueurGenouxEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Longueur de genoux"/>
+        <EditText android:id="@+id/tourGenouxEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Tour de genoux"/>
+        <EditText android:id="@+id/basEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Bas"/>
+        <EditText android:id="@+id/autresMesuresEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Autres mesures"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suivi de commande"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+        <EditText android:id="@+id/dateCommandeEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Date de commande" android:inputType=""/>
+        <EditText android:id="@+id/dateLivraisonEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Date de livraison" android:inputType="DatePickerDialog"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paiement"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+        <EditText android:id="@+id/sommeTotaleEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Somme totale"/>
+        <EditText android:id="@+id/avanceEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Avance"/>
+        <EditText android:id="@+id/resteEdt" android:layout_width="match_parent" android:layout_height="60dp" android:hint="Reste" android:enabled="false"/>
+
+        <Button
+            android:id="@+id/btnEnregistrer"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Enregistrer"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>
